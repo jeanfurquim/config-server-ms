@@ -6,3 +6,13 @@ eureka:
       defaultZone: http://localhost:9099/eureka/
   instance:
     prefer-ipp-address: true
+
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/doPayment
+  booking-service:
+    endpoints:
+      endpoint:
+        uri: http://BOOKING-SERVICE/book/bookOrder
